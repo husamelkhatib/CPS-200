@@ -184,12 +184,112 @@ development.
 
 
 
+# 2. Data Types
 
+Data types in Java are essential for defining the kind of data that variables can
+hold. Java provides a lot of built-in data types, each designed to store 
+specific types of information. Understanding data types is fundamental to writing
+Java programs effectively.
 
+## 2.1 Common Data Types
 
+### 2.1.1 `int`: Integer
+The `int` data type is used to store signed 32-bit integer values. It can represent
+both positive and negative whole numbers.
 
+Example:
+```java
+int age = 25;
 
+```
+### 2.1.2 `double`: Double-Precision Floating-Point
+The `double` data type is used to store double-precision floating-point numbers, 
+which are decimal numbers with high precision.
 
+Example:
+```java
+double pi = 3.14159265358979;
 
+```
+### 2.1.3 `float`: Floating-Point
+The `float` data type is used to store numbers that don't require extreme precision,
+when you need to save on storage, or you are bound by processing power, you can use 
+`float` rather than `double`.
+```java
+float pi = 3.1415926;
 
+```
+### 2.1.4 `String`: String
+The `String` data type is used to store sequences of characters, such as text. 
+Strings are enclosed in double quotes.
+
+Example:
+```java
+String greeting = "Hello, World!";
+
+```
+### 2.1.5 `boolean`: Boolean
+The `boolean` data type represents Boolean values, which can be either `true` or 
+`false`. Booleans are used for logical operations and conditional statements.
+
+Example:
+```java
+boolean isRaining = true;
+
+```
+### 2.1.6 `char`: Character
+The `char` data type is used to store a single Unicode character. Characters are 
+enclosed in single quotes.
+
+Example:
+```java
+char grade = 'A';
+
+```
+### 2.1.7 `BigDecimal`: Decimal
+The `BigDecimal` data type is used to store decimal numbers with high precision. It 
+is often used in financial calculations where accuracy is crucial.
+
+Example:
+
+```java
+import java.math.BigDecimal;
+
+BigDecimal price = 19.99;
+
+```
+### 2.1.8 `byte`: Byte
+The `byte` data type is used to store unsigned 8-bit integer values, ranging from 
+0 to 255.
+
+Example:
+```java
+byte redValue = 255;
+
+```
+## 2.2 Declaring Variables
+To declare a variable, you specify the data type followed by the variable name. 
+Variables can hold data of the declared type.
+
+Example:
+```java
+int numberOfApples;
+String playerName;
+double temperature;
+
+```
+## 2.3 Type Inference (`var` Keyword)
+Java allows type inference using the `var` keyword. The compiler determines the 
+data type based on the assigned value.
+
+Example:
+```java
+var itemCount = 10; // Compiler infers that itemCount is of type int
+
+```
+## 2.4 Summary
+Understanding and choosing the appropriate data types is essential for efficient
+and error-free Java programming. Java provides a range of data types to 
+accommodate various types of data, from integers and floating-point numbers to 
+String and Boolean values.
 
