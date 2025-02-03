@@ -63,7 +63,7 @@ ___
 
 
 
-# Compiling and Running Java Programs
+# 1. Compiling and Running Java Programs
 
 ## 1.1 Compiling a Java Program
 
@@ -292,4 +292,120 @@ Understanding and choosing the appropriate data types is essential for efficient
 and error-free Java programming. Java provides a range of data types to 
 accommodate various types of data, from integers and floating-point numbers to 
 String and Boolean values.
+
+
+
+# 3. Console I/O in Java
+
+## 3.1 Output with `System.out`
+
+Java provides the `System.out` object to print text to the console.
+
+### Common Methods:
+- **`System.out.print(String s)`**: Prints text without a newline.
+- **`System.out.println(String s)`**: Prints text followed by a newline.
+- **`System.out.printf(String format, Object... args)`**: Prints formatted text.
+
+### Example:
+```java
+public class OutputExample {
+    public static void main(String[] args) {
+        System.out.print("Hello, ");
+        System.out.println("World!");
+        System.out.printf("%s scored %d points.\n", "Alice", 95);
+    }
+}
+```
+#### Output:
+```
+Hello, World!
+Alice scored 95 points.
+```
+
+## 3.2 Input with `Scanner`
+
+The `Scanner` class is used to read input from the console.
+
+### Steps to Read Input:
+1. Import the `java.util.Scanner` class.
+2. Create a `Scanner` object.
+3. Use appropriate methods to read input.
+
+### Example:
+```java
+import java.util.Scanner;
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        scanner.close();
+    }
+}
+```
+
+## 3.3 Formatting Output
+
+Java provides `printf` for formatted output, similar to `printf` in C.
+
+### Format Specifiers:
+- `%d` - Integer
+- `%f` - Floating point number
+- `%s` - String
+- `%n` - Newline
+
+### Example:
+```java
+public class FormattingExample {
+    public static void main(String[] args) {
+        double price = 10.56789;
+        System.out.printf("Price: %.2f USD%n", price);
+    }
+}
+```
+#### Output:
+```
+Price: 10.57 USD
+```
+
+## 3.4 Reading Numeric Input
+
+The `Scanner` class provides methods to read different numeric types.
+
+### Methods:
+- `nextInt()` - Reads an integer.
+- `nextDouble()` - Reads a double.
+- `nextLong()` - Reads a long.
+
+### Example:
+```java
+import java.util.Scanner;
+
+public class NumericInputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        System.out.println("You entered: " + number);
+        scanner.close();
+    }
+}
+```
+
+## 3.5 Summary
+
+- Use `System.out.print`, `System.out.println`, or `System.out.printf` for output.
+- Use `Scanner` for user input.
+- Format output using `printf`.
+- Read numeric input using `Scanner` methods like `nextInt()` and `nextDouble()`.
+
+
+
+
+
+
+
+
 
